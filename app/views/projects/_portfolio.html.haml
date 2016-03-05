@@ -1,0 +1,40 @@
+.container.masonry-wrapper.scrollimation.fade-in
+  #projects-container
+    =render 'projects/projects/punch_clock'
+    =render 'projects/projects/text_notify'
+    =render 'projects/projects/myflix'
+    =render 'projects/projects/postit'
+    =render 'projects/projects/blackjack'
+    =render 'projects/projects/dusky'
+    =render 'projects/projects/meg'
+/
+  \==============================================
+  PROJECT PREVIEW MODAL (Do not alter this markup)
+  \===============================================
+#project-modal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        .container
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+          %h1#hdr-title.text-center
+          .row
+            .col-md-8.col-md-offset-2
+              .image-wrapper
+                %img.img-responsive{:alt => "", :src => "assets/chrome.png"}/
+                .loader
+                .screen
+      .modal-body
+        .container
+          .row
+            #project-sidebar.col-md-3
+              %h2#sdbr-title
+              %p#sdbr-category
+              %p#sdbr-date
+              %p#sdbr-client
+              %p#sdbr-link
+                %a{:href => "#link", :target => "_blank"}
+              %p#sdbr-github
+                %a{:href => "#link", :target => "_blank"}
+              %p#sdbr-descr
+            #project-content.col-md-8.col-md-offset-1

@@ -1,0 +1,40 @@
+%article.project-item.ruby-on-rails
+  =image_tag "/assets/images/projects/pijon-small.jpg", class: "img-responsive.project-image" 
+  / Project thumb
+  .hover-mask
+    %h2.project-title PijonTxt
+    / Project Title
+    %p SMS Texting app for business to comunicate with and market to their customers
+    / Project Subtitle
+  / ==== Project Preview HTML ====
+  .sr-only.project-description{"data-category" => "Ruby on Rails", "data-date" => "2014", "data-descr" => "A simple app for keeping track of time spent working on jobs and tasks.", "data-images" => "/assets/images/projects/pijon1.jpg, /assets/images/projects/pijon2.jpg, /assets/images/projects/pijon3.jpg, /assets/images/projects/pijon4.jpg, /assets/images/projects/pijon5.jpg", "data-link" => "www.pijontxt.com, http://www.pijontxt.com", "data-github" => "https://github.com/doug7410/text_notify"}
+    %p This is an app I'm currently working on. It utilized the Twilio API to send SMS messages. There are 2 main use cases for it as of now. 
+    %ol
+      %li business can use it to notify their customers when an item is ready to be picked up
+      %li business can collect subscribers and use it to send a mass text to all the subscribers with a special promotion or marketing message.
+
+    %p There are several other things it could be used for, and even niche markets that can be targeted. Some of the interesing features are:
+
+    %ul
+      %li Bult with TDD using Rspec and Capybara
+      %li 
+        Integrates with the Twilio API 
+        =link_to 'twilio.com', 'http://www.twilio.com'
+      %li Devise for authenticaion
+      %li uses Sidekiq and Redis for background sending of text
+      %li uses a deployment pipeline with Unicorn, and Paratrooper
+      %li uses HAML in the view templates
+      %li queue functionality
+      %li ajax/jquery functionality for looking up customers 
+      %li custmers can subscribe to a group by texting the group name to the apps phone number
+      %li business owners create unique group names for collecting subscribers
+      %li business owners set up default messages
+      %li uses the Mailgun API for emails
+      %li can send a "group text", which is really many individual text
+
+
+    %p.text-right
+      =link_to 'http://text-notify.herokuapp.com' do
+        %button.btn.btn-meflat.icon-right
+          Visit Website
+          %i.fa.fa-arrow-right

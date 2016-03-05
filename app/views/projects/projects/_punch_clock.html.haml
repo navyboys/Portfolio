@@ -1,0 +1,30 @@
+%article.project-item.ruby-on-rails
+  =image_tag "/assets/images/projects/punch-clock-small.jpg", class: "img-responsive.project-image" 
+  / Project thumb
+  .hover-mask
+    %h2.project-title Punch Clock
+    / Project Title
+    %p A simple time tracking app
+    / Project Subtitle
+  / ==== Project Preview HTML ====
+  .sr-only.project-description{"data-category" => "Ruby on Rails", "data-date" => "2014", "data-descr" => "A simple app for keeping track of time spent working on jobs and tasks.", "data-images" => "/assets/images/projects/punch-clock1.jpg, /assets/images/projects/punch-clock2.jpg, /assets/images/projects/punch-clock3.jpg", "data-link" => "punch-the-clock.herokuapp.com, http://doug-postit.herokuapp.com", "data-github" => "https://github.com/doug7410/punch-clock"}
+    %p This is a simple app for tracking time. It could have several applications. I created it for keeping track of how long I spend working on freelance gigs and learning about web development. 
+    %p It uses a simple authentication system I built myself instead of relying on an authentication gem like 'Devise'. Some interesting features of this app are:
+    %ul
+      %li time zones for the main clock
+      %li nested routes
+      %li authentication with bcript
+      %li RESTful routes
+
+    %p 
+      The method by wich it calculates the time on a job is worth noting. You can see it on line 29 
+      =link_to 'here' 'https://github.com/doug7410/punch-clock/blob/master/app/models/job.rb'
+      <script src="https://gist.github.com/doug7410/ab900c18319e4ee1ac4e.js"></script>
+
+    %p This was my first app after learning Ruby on Rails, and it could be a good base for adding lots of featrues and a cool design. 
+
+    %p.text-right
+      =link_to 'http://punch-the-clock.herokuapp.com' do
+        %button.btn.btn-meflat.icon-right
+          Visit Website
+          %i.fa.fa-arrow-right

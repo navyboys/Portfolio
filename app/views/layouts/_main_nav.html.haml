@@ -1,0 +1,28 @@
+#main-nav.navbar.navbar-fixed-top{class: ('scrolled' unless @main_page)}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#site-nav", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / ======= LOGO (for small screens)========
+      %a.navbar-brand.visible-xs.scrollto{:href => "#home"} Ds
+    #site-nav.navbar-collapse.collapse
+      %ul.nav.navbar-nav
+        %li{ class: ('active' if action_name == 'about') }
+          =link_to 'About Me', '/about'
+        %li{ class: ('active' if action_name == 'services') }
+          =link_to 'What I Do', '/services'
+        %li{ class: ('active' if action_name == 'portfolio') }
+          =link_to 'My Works', '/projects'
+        %li#logo
+          =link_to root_path do
+            %h1
+              D
+              %span S
+        %li
+          =link_to 'Blog', 'http://doug7410.github.io', target: 'blank'
+        %li
+          =link_to 'Resume', 'https://docs.google.com/document/d/1O4uIYVf7gTeXMWqnoZkXFZZ_Xr_pULQ9DdYATqwyINw/edit?usp=sharing', target: 'blank'
+        %li
+          =link_to 'Contact', new_inquiry_path

@@ -1,0 +1,39 @@
+%article.project-item.ruby-sinatra
+  =image_tag "/assets/images/projects/blackjack-small.jpg", class: "img-responsive.project-image"
+  / Project thumb
+  .hover-mask
+    %h2.project-title NavyBLACKJACK
+    / Project Title
+    %p An interactive web-based BlackJack Game
+    / Project Subtitle
+  / ==== Project Preview HTML ====
+  .sr-only.project-description{"data-category" => "Ruby, Sinatra", "data-date" => "2014", "data-descr" => "Web based Blackjack game built on the Sinatra framework", "data-images" => "/assets/images/projects/blackjack1.jpg, /assets/images/projects/blackjack2.jpg, /assets/images/projects/blackjack3.jpg", "data-link" => "navybj.herokuapp.com, http://navybj.herokuapp.com", "data-github" => "https://github.com/navyboys/NavyBJ"}
+    %p
+      This is a practice project for
+      =link_to 'TeaLeaf Academy', 'https://launchschool.com/courses'
+      's first course: Introduction to Ruby and Web Development.
+    %p Here are some skills I learned while building this app:
+
+    %ul
+      %li HTTP
+      %li Request/Response life cycle
+      %li URL mapping and routing requests
+      %li Static/Dynamic web pages
+      %li ERB
+      %li Processing Forms
+      %li Passing in parameters
+      %li Response: render, redirect, status codes
+      %li Sessions
+      %li Deploying to Heroku
+      %li Debugging with pry
+      %li Built with Ruby 2 and Sinatra
+      %li Use cookies for data persistance
+      %li incorporated some jQuery for UI interaction
+      %li Admin function by Roles
+      %li UI with default BootStrap styles
+
+    %p.text-right
+      =link_to 'http://navybj.herokuapp.com' do
+        %button.btn.btn-meflat.icon-right
+          Visit Website
+          %i.fa.fa-arrow-right
