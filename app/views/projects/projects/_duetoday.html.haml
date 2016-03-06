@@ -1,0 +1,43 @@
+%article.project-item.php
+  =image_tag "/assets/images/projects/DueToday-Small.jpg", class: "img-responsive.project-image"
+  / Project thumb
+  .hover-mask
+    %h2.project-title DueToday
+    / Project Title
+    %p Day-based Todo List
+    / Project Subtitle
+  / ==== Project Preview HTML ====
+  .sr-only.project-description{"data-category" => "Ruby on Rails", "data-date" => "2016", "data-descr" => "Day-based todo list concentrated on tasks due today.", "data-images" => "/assets/images/projects/DueToday-01.jpg, /assets/images/projects/DueToday-02.jpg, /assets/images/projects/DueToday-03.jpg,/assets/images/projects/DueToday-04.jpg,/assets/images/projects/DueToday-05.jpg,/assets/images/projects/DueToday-06.jpg,/assets/images/projects/DueToday-07.jpg,/assets/images/projects/DueToday-08.jpg", "data-link" => "duetoday.herokuapp.com, https://duetoday.herokuapp.com", "data-github" => "https://github.com/navyboys/DueToday"}
+    %p
+      This is a day-based online todo list concentrated on tasks due today.
+      At the beginning of a new work day, you should review and mark all tasks you listed yesterday to [done] or [not yet] first and then start a new todo-list for the coming day.
+      History, Search, Profile and Donate functions are also available nowadays.
+    %p
+      It is a personal project that I would like to keep it alive and helpful to serve myself and other self-motivated individuals.
+
+    %p
+      %b Features
+    %ul
+      %li Day-based Todo list
+      %li Evaluate previous work day by processing tasks & adding comment
+      %li Listing history
+      %li Serach by keywords in title
+      %li Donation using credit card
+      %li Profile setting with name, passwpord, avatar and time-zone
+
+    %p
+      %b Skills
+    %ul
+      %li TDD with 130+ specs (Rspec, Capybara)
+      %li Code quality with RuboCop, Rails Best Practices and Coverage
+      %li Continuous CI and CD with CircleCI and Heroku
+      %li Emailing with MailGun and background jobs(Sidekiq)
+      %li Searching engine with Elasticsearch
+      %li Image upload with PaperClip on Amazon S3.
+      %li Paging with Kaminari
+
+    %p.text-right
+      =link_to 'http://duetoday.herokuapp.com' do
+        %button.btn.btn-meflat.icon-right
+          Visit
+          %i.fa.fa-arrow-right
