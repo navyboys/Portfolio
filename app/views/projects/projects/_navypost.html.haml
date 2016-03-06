@@ -1,0 +1,44 @@
+%article.project-item.ruby-on-rails
+  =image_tag "/assets/images/projects/navypost-small.jpg", class: "img-responsive.project-image"
+  / Project thumb
+  .hover-mask
+    %h2.project-title NavyPOST
+    / Project Title
+    %p Reddit Clone
+    / Project Subtitle
+  / ==== Project Preview HTML ====
+  .sr-only.project-description{"data-category" => "Ruby on Rails", "data-date" => "2014", "data-descr" => "A clone of Reddit built with Ruby on Rails.", "data-images" => "/assets/images/projects/navypost1.jpg, /assets/images/projects/navypost2.jpg, /assets/images/projects/navypost3.jpg, /assets/images/projects/navypost4.jpg", "data-link" => "navypost.herokuapp.com, http://navypost.herokuapp.com", "data-github" => "https://github.com/navyboys/NavyPOST"}
+    %p
+      This is a Reddit clone build for
+      =link_to 'TeaLeaf Academy', 'https://launchschool.com/courses'
+      's course:
+      %b Rapid Prototyping with Ruby on Rails.
+      Users can share news & ideas organized by categories and vote posts by like & dislike buttons.
+
+    %p
+      %b Features:
+    %ul
+      %li Create and edit posts
+      %li Organize posts by category
+      %li Add comments and vote on posts
+      %li Track who created every comment, vote, and post
+      %li View and edit user profiles
+      %li Display time based on user specified time zone
+      %li Admin can edit all posts
+
+    %p
+      %b Skills:
+    %ul
+      %li Built with Ruby 2 and Rails 4
+      %li Authentication system form scratch
+      %li 2-factor authentication
+      %li Admin function by Roles
+      %li Use AJAX to vote
+      %li Slugs as URLs
+      %li Use gem to extract common logic
+
+    %p.text-right
+      =link_to 'http://navypost.herokuapp.com' do
+        %button.btn.btn-meflat.icon-right
+          Visit
+          %i.fa.fa-arrow-right
