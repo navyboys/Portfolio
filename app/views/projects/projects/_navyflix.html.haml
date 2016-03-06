@@ -7,37 +7,105 @@
     %p NetFLiX Clone
     / Project Subtitle
   / ==== Project Preview HTML ====
-  .sr-only.project-description{"data-category" => "Ruby on Rails, TDD", "data-date" => "2015", "data-descr" => "Clone of NetFLiX built with Ruby on Rails", "data-images" => "/assets/images/projects/myflix1.jpg,/assets/images/projects/myflix2.jpg, /assets/images/projects/myflix3.jpg, /assets/images/projects/myflix4.jpg, /assets/images/projects/myflix5.jpg, /assets/images/projects/myflix6.jpg, /assets/images/projects/myflix7.jpg, /assets/images/projects/myflix8.jpg, /assets/images/projects/myflix9.jpg, /assets/images/projects/myflix10.jpg, /assets/images/projects/myflix11.jpg", "data-link" => "myflix-doug.herokuapp.com, http://myflix-doug.herokuapp.com", "data-github" => "https://github.com/doug7410/myflix"}
+  .sr-only.project-description{"data-category" => "Ruby on Rails, TDD", "data-date" => "2015", "data-descr" => "Clone of NetFLiX built with Ruby on Rails", "data-images" => "/assets/images/projects/navyflix1.jpg,/assets/images/projects/navyflix2.jpg, /assets/images/projects/navyflix3.jpg, /assets/images/projects/navyflix4.jpg, /assets/images/projects/navyflix5.jpg, /assets/images/projects/navyflix6.jpg, /assets/images/projects/navyflix7.jpg", "data-link" => "navyflix.herokuapp.com, http://navyflix.herokuapp.com", "data-github" => "https://github.com/navyboys/NavyFLiX"}
     %p
-      This app was built with Tealeaf Academy's third course
-      =link_to '"Build Robust and Production Quality Applications"', 'http://www.gotealeaf.com/curriculum#!production-apps'
-      It's a clone of netflix.com. It doesn't stream video like Netflix, but it focusus more on software design and some advance development topics. The first thing I learned while building this app was Test Driven Development. After learning the basics of TDD, I can see how it provides an exelent environment for developing robust, high quality code.
+      This is a NetFLiX clone build for
+      =link_to 'TeaLeaf Academy', 'https://launchschool.com/courses'
+      's course:
+      %b Build Robust and Production Quality Applications.
+      User can search & watch videos, add videos to ‘My Favorites’ and follow other users. It is also equipped with admin functions like adding video.
 
-    %p Some interesting featrues and things I learned while building this:
-
+    %p
+      %b Features
     %ul
-      %li Team colaboration with GitHub Flow
-      %li Testing with Rspec and Capybara
-      %li Complex registration workflow, service objects
-      %li Users can invite friends to join. The friends are send a link with a temporary token which links them back to the inviter
-      %li Integration with the Stripe API for billing
-      %li Privileges and access control
+      %li User signs up, signs in, resets passowrd and invites friends
+      %li User follows other users and view their favorite lists
+      %li User adds video to favorite list and reorders the items in the list.
+      %li User ranks videos and leaves comments to videos.
+      %li Searching by video title
+      %li Admin adds new video info including video path and pitures.
+
+    %p
+      %b Skills
+
+    %p General
+    %ul
+      %li Built by TDD and GitHub Workflow
+      %li Model/Controller/Service/Features Test
+      %li Continous Integration with CircleCI
+      %li Continous Delievery with Heroku
+
+    %p Team Collaboration
+    %ul
+      %li Feature development with Git branching
+      %li Github flow
+      %li Code reviews
+
+    %p Front-End Frameworks
+    %ul
+      %li HAML
+      %li SASS
+      %li Twitter Bootstrap
+      %li jQuery
+
+    %p Test
+    %ul
+      %li Unit, functional, and integration tests
+      %li Development and test databases
+      %li TDD and red / green / refactor
+      %li Testing with RSpec
+      %li Generate fake data with Fabricate
+      %li Dealing with cardinality and boundary conditions
+      %li Refactor with TDD
+      %li Macros
+      %li Shared examples
+      %li Feature specs
+      %li Capybara
+      %li Test doubles and method stubs
+      %li Feature tests with Javascript
+      %li Testing email sending
+      %li Fully integrated API tests
+      %li Isolated API tests
+      %li Message expectations
+      %li Mocking
+      %li Stubs and mocks
+
+    %p Building Application
+    %ul
       %li Seeding data
+      %li Search
       %li Sending emails
       %li Use random tokens
-      %li Email service providers
+      %li Emailing with Mailgun
+      %li Custom form builders
+      %li Custom form builders as gems
       %li Complex forms
       %li Self referential associations
       %li Organize cross cutting functionality with Concerns
       %li Background jobs
+      %li Resque and Sidekiq
       %li Amazon S3
-      %li Uploading files
-      %li Skinny controller, fat model
-      %li Wrapping APIs
+      %li Uploading files with Carrierwave
+      %li Credit card payment with Stripe
+      %li Checkout
+      %li Payment forms
+      %li Recurring billing
+      %li Handle callback events
       %li Beyond MVC
 
-    %p.text-right
+    %p Production Application Considerations
+    %ul
+      %li Deploy with Procfile and Foreman
+      %li Deploy with background jobs
+      %li Secure sensitive data
+      %li Staging and production servers
+      %li Deployment pipeline
+      %li Continuous Integration with CircleCI
+      %li Continuous Delivery with Heroku
+      %li Production error monitoring with Sentry
+
+    %p.text-center
       =link_to 'http://myflix-doug.herokuapp.com' do
         %button.btn.btn-meflat.icon-right
-          Visit Website
+          Visit
           %i.fa.fa-arrow-right
