@@ -3,26 +3,16 @@
     %header.section-header.text-center
       %h1.scrollimation.scale-in My Works
       %p
-        These are some of the projects I've worked on over the years.
-    / ==== Portfolio Filters ====
-    #filter-works
-      %ul
-        %li.active.scrollimation.fade-right.d1
-          %a{"data-filter" => "*", :href => "#"} All
-        %li.scrollimation.fade-right
-          %a{"data-filter" => ".ruby-on-rails", :href => "#"} Ruby on Rails
-        %li.scrollimation.fade-left
-          %a{"data-filter" => ".ruby-sinatra", :href => "#"} Ruby/ Sinatra
-        %li.scrollimation.fade-left.d1
-          %a{"data-filter" => ".php", :href => "#"} PHP
-        %li.scrollimation.fade-left.d1
-          %a{"data-filter" => ".wordpress", :href => "#"} Wordpress  
-    / End portfolio filters
+        Some Ruby related projects I've worked over the last few years.
+  / ==== Portfolio Filters ====
+  #filter-works
+    %ul
+      %li.active.scrollimation.fade-right.d1
+        %a{"data-filter" => "*", :href => "#"} All
+      %li.scrollimation.fade-right
+        %a{"data-filter" => ".ruby-on-rails", :href => "#"} Ruby on Rails
+      %li.scrollimation.fade-left
+        %a{"data-filter" => ".ruby-sinatra", :href => "#"} Ruby/Sinatra
   / End portfolio header
 
   =render 'portfolio'
-
-
-
-
-

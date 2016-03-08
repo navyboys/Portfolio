@@ -2,9 +2,9 @@
   .container
     .row
       .col-sm-6.text-col
-        %h1 
-          Doug Steinberg
-        %p full stack Ruby on Rails developer
+        %h1
+          Ben Zheng
+        %p Ruby on Rails Developer / Data Analyst
         %p.text-center
           =link_to '/about', class: 'btn btn-meflat btn-about scrollto dark-bg icon-left' do
             %i.fa.fa-arrow-right
@@ -15,21 +15,29 @@
           .imac-screen.flexslider
             %ul.slides
               %li
+                =image_tag('/assets/images/ruby.jpg')
+              %li
                 =image_tag('/assets/images/ruby-on-rails.jpg')
               %li
-                =image_tag('/assets/images/html5_css3_javascript.jpg')  
+                =image_tag('/assets/images/rspec.jpg')
               %li
-                =image_tag('/assets/images/code.jpg')
+                =image_tag('/assets/images/html-css-js.jpg')
               %li
                 =image_tag('/assets/images/github.jpg')
               %li
-                =image_tag('/assets/images/heroku-logo.jpg')    
+                =image_tag('/assets/images/heroku-logo.jpg')
+              %li
+                =image_tag('/assets/images/rapidminer.jpg')
+              %li
+                =image_tag('/assets/images/lean-startup.jpg')
+              %li
+                =image_tag('/assets/images/AARRR.jpg')
 :javascript
   if ($(window).scrollTop()===0){
     $('#main-nav').removeClass('scrolled');
   }
   else{
-    $('#main-nav').addClass('scrolled');    
+    $('#main-nav').addClass('scrolled');
   }
 
   $(window).scroll(function(){
@@ -37,7 +45,7 @@
       $('#main-nav').removeClass('scrolled');
     }
     else{
-      $('#main-nav').addClass('scrolled');    
+      $('#main-nav').addClass('scrolled');
     }
   });
 
