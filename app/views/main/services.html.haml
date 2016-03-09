@@ -1,32 +1,62 @@
 %section#services.gray-bg.padding-top-bottom
   .container
     %header.section-header.text-center
-      %h1.scrollimation.scale-in What I Do
+      %h1.scrollimation.scale-in Skills
       %p
-        I build web apps and sites from the ground up using Ruby on Rails, HTML, CSS, and Javascript. My code is writted using TDD with Rspec and Capybara. I can add features to a project, or build a new site from scratch. In addition to Ruby on Rails, I have expierence with PHP/mySQL and Wordpress.
-    .row.services
-      .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
-        .icon
-          =image_tag '/assets/images/stack.jpg' , class: 'img-responsive img-center'
-        %h2 Web Development
-        %p Web development in the Ruby on Rails stack
-      .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
-        .icon
-          =image_tag '/assets/images/API.jpg', class: 'img-responsive img-center'
-        %h2 API integration
-        %p API's are awesome!
-      .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
-        .icon
-          =image_tag '/assets/images/ecommerce.jpg', class: 'img-responsive img-center'
-        %h2 E-commerce
-        %p E-commerce with Stripe, PayPal, and other payment API's
-      .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
-        .icon
-          =image_tag '/assets/images/deployment.jpg', class: 'img-responsive img-center'
-        %h2 Version control &amp; Deployment
-        %p Version controll and team colaboration with GitHub, Deployment with Heroku
-=render 'main/skills'
+        Technology skills related to Web Development and Data Analysis.
+    .row.skills
+      .col-sm-4.col-md-2.text-center
+        %span.chart{"data-percent" => "85"}
+          %span.percent 85
+        %h2.text-center Ruby on Rails
+      .col-sm-4.col-md-2.text-center
+        %span.chart{"data-percent" => "80"}
+          %span.percent 80
+        %h2.text-center HTML/CSS
+      .col-sm-4.col-md-2.text-center
+        %span.chart{"data-percent" => "60"}
+          %span.percent 60
+        %h2.text-center JS & jQuery
+      .col-sm-4.col-md-2.text-center
+        %span.chart{"data-percent" => "60"}
+          %span.percent 80
+        %h2.text-center RDBMS
+      .col-sm-4.col-md-2.text-center
+        %span.chart{"data-percent" => "60"}
+          %span.percent 60
+        %h2.text-center Java/Spring
+      .col-sm-4.col-md-2.text-center
+        %span.chart{"data-percent" => "85"}
+          %span.percent 85
+        %h2.text-center Data Mining
 
+-#     %header.section-header.text-center
+-#       %h1.scrollimation.scale-in What I Do
+-#       %p
+-#         I build web apps and sites from the ground up using Ruby on Rails, HTML, CSS, and Javascript. My code is writted using TDD with Rspec and Capybara. I can add features to a project, or build a new site from scratch. In addition to Ruby on Rails, I have expierence with PHP/mySQL and Wordpress.
+-#     .row.services
+-#       .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
+-#         .icon
+-#           =image_tag '/assets/images/stack.jpg' , class: 'img-responsive img-center'
+-#         %h2 Web Development
+-#         %p Web development in the Ruby on Rails stack
+-#       .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
+-#         .icon
+-#           =image_tag '/assets/images/API.jpg', class: 'img-responsive img-center'
+-#         %h2 API integration
+-#         %p API's are awesome!
+-#       .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
+-#         .icon
+-#           =image_tag '/assets/images/ecommerce.jpg', class: 'img-responsive img-center'
+-#         %h2 E-commerce
+-#         %p E-commerce with Stripe, PayPal, and other payment API's
+-#       .col-md-3.col-sm-6.item.scrollimation.fade-up.d1
+-#         .icon
+-#           =image_tag '/assets/images/deployment.jpg', class: 'img-responsive img-center'
+-#         %h2 Version control &amp; Deployment
+-#         %p Version controll and team colaboration with GitHub, Deployment with Heroku
+-# =render 'main/skills'
+-#
 
 :javascript
   $(window).scroll(function(){
