@@ -12,11 +12,12 @@
               %i.fa.fa-arrow-right
       .col-sm-6
         .imac-frame
-          %img.img-responsive.img-center{:alt => "", :src => "assets/imac.png"}/
+          %img.img-responsive.img-center
+            =image_tag('/assets/images/imac.png')
           .imac-screen.flexslider
             %ul.slides
               %li
-                =image_tag('/assets/images/ruby.jpg')
+                = image_tag('/assets/images/ruby.jpg')
               %li
                 =image_tag('/assets/images/ruby-on-rails.jpg')
               %li

@@ -1,0 +1,13 @@
+/* line 1, /Users/navyboys/Github/Portfilio/app/assets/stylesheets/custom.css.scss */
+#sdbr-github:before {
+  display: inline-block;
+  width: 20px;
+  content: "\f092";
+  font-family: "Fontawesome";
+  margin-right: 10px;
+}
+
+/* line 10, /Users/navyboys/Github/Portfilio/app/assets/stylesheets/custom.css.scss */
+#project-content a, #project-sidebar a {
+  color: #38a5db !important;
+}
