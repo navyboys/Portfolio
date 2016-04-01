@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'haml-rails'
 gem 'active_attr'
+gem 'rubocop'
 
 group :development do
   gem 'sqlite3'
@@ -19,7 +20,7 @@ group :development do
   gem 'railties'
   gem 'pry'
   gem 'pry-nav'
-  gem "erb2haml" 
+  gem "erb2haml"
   gem "letter_opener"
 end
 
