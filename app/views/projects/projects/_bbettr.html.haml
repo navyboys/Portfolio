@@ -1,0 +1,32 @@
+%article.project-item.ruby-sinatra
+  =image_tag "/assets/images/projects/BBettr-Small.jpg", class: "img-responsive.project-image"
+  / Project thumb
+  .hover-mask
+    %h2.project-title BBettr
+    / Project Title
+    %p Bet service for Baseball games
+    / Project Subtitle
+  / ==== Project Preview HTML ====
+  .sr-only.project-description{"data-category" => "Ruby, Sinatra", "data-date" => "2016", "data-descr" => "Baseball game bet service built with Sinatra.", "data-images" => "/assets/images/projects/BBettr-01.jpg, /assets/images/projects/BBettr-02.jpg, /assets/images/projects/BBettr-03.jpg, /assets/images/projects/BBettr-04.jpg, /assets/images/projects/BBettr-05.jpg, /assets/images/projects/BBettr-06.jpg, /assets/images/projects/BBettr-07.jpg, /assets/images/projects/BBettr-08.jpg, /assets/images/projects/BBettr-09.jpg", "data-github" => "https://github.com/navyboys/sport_bet"}
+    %p
+      This is the mid-term project of
+      =link_to 'Lighthouse Labs', 'https://www.lighthouselabs.ca/', target: 'blank'
+      , which was designed and developed by a gorup of four students within five days.
+      Baseball fans can bet on MLB games with each other. Game data comes from realworld via FatasyData API.
+
+    %h4 Features
+    %ul
+      %li Realtime MLB game data refresh
+      %li Create, cancel & archive bets
+      %li Bets resolved automatically when game over
+      %li Buy points with credit card
+      %li Leaderboard
+      %li User profile
+
+    %h4 Skills
+    %ul
+      %li Built with Sinatra
+      %li FantasyData API for MLB data retrieval
+      %li Stripe API for payment
+      %li ActiveRecord
+      %li Twitter Boostrap
